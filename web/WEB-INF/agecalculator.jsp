@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Age Calculator</h1>
-        <form method="POST" action="">
+        <form method="POST" action="calculator">
             <label>Enter your age:</label>
             <input type="text" name="age" value="${client_age}"><br>
             <input type="submit" value="Age next birthday">
