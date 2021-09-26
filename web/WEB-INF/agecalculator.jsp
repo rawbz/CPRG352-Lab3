@@ -20,6 +20,6 @@
         </form>
         <p>${message}</p>
         <p>${birthdayMessage}</p>
-        <a href="">Arithmetic Calculator</a>
+        <a href="arithmetic">Arithmetic Calculator</a>
     </body>
 </html>
