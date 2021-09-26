@@ -29,12 +29,12 @@ public class ageCalcServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
                 //capture age 
-                int age = request.getPerameter("age");
+                String age = request.getParameter("age");
 
                 //set attribute
                 request.setAttribute("client_age", age);
 
-                if(age = null){
+                if(age == null){
                     //dispay error message
                     request.setAttribute("message", "You must give your current age");
 
