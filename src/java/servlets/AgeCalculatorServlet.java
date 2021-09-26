@@ -32,9 +32,9 @@ public class ageCalcServlet extends HttpServlet {
                 int age = request.getPerameter("age");
 
                 //set attribute
-                request.setAttribute("client_age", clientAge);
+                request.setAttribute("client_age", age);
 
-                if(clientAge == null){
+                if(age = null){
                     //dispay error message
                     request.setAttribute("message", "You must give your current age");
 
