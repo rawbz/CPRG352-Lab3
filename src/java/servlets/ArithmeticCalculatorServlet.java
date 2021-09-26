@@ -22,7 +22,9 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
                 //load arithmetic jsp
-        getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
+                getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
+                //have message show -- when no input 
+                request.setAttribute("results", "---");
     }
 
 
@@ -38,9 +40,6 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 request.setAttribute("firstNum", first);
                 request.setAttribute("secondNum", second); 
 
-                //have message show -- when no input 
-                request.setAttribute("results", "---");
-
                 //check if input is invalid
                 if(first == null || second == null || first.equals("") || second.equals("")){
                 //have message show -- when no input 
@@ -49,10 +48,9 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
 
                 try {
                     Integer.parseInt(first);
-                } catch {
+                } catch (Exception e) {
                     request.setAttribute("results", "invalid");
                 }
-
 
     }
 

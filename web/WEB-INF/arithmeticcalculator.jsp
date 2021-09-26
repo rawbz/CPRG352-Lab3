@@ -24,6 +24,6 @@
             <input type="submit" value="%">
         </form>
         <p>Result: ${results}</p><br>
-        <a href="calculator">Arithmetic Calculator</a>
+        <a href="calculator">Age Calculator</a>
     </body>
 </html>
