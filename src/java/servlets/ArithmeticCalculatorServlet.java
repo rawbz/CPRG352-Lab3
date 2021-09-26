@@ -45,13 +45,9 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 //have message show -- when no input 
                 request.setAttribute("results", "---");
 
+                getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
+                
                 return;
-                } 
-
-                try {
-                    Integer.parseInt(first);
-                } catch (Exception e) {
-                    request.setAttribute("results", "invalid");
                 }
 
                 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
