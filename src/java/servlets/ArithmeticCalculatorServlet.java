@@ -43,7 +43,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 //check if input is invalid
                 if(first == null || second == null || first.equals("") || second.equals("")){
                 //have message show -- when no input 
-                request.setAttribute("results", "---");
+                request.setAttribute("results", "Invalid");
 
                 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
                 
