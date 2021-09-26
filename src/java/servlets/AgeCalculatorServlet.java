@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author rmjba
  */
-public class ageCalcServlet extends HttpServlet {
+public class AgeCalculatorServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
