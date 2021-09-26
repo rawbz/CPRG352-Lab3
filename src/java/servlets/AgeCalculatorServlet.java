@@ -40,8 +40,6 @@ public class AgeCalculatorServlet extends HttpServlet {
 
                     //display form again JSP
                     getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request,response);
-
-                    return;
                 }
     }
 
