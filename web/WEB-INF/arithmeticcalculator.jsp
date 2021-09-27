@@ -18,10 +18,10 @@
             <input type="text" name="first_number" value="${firstNum}"><br>
             <label>Second:</label>
             <input type="text" name="second_number" value="${secondNum}"><br>
-            <input type="submit" value="+">
-            <input type="submit" value="-">
-            <input type="submit" value="*">
-            <input type="submit" value="%">
+            <input type="submit" name="request" value="+">
+            <input type="submit" name="request" value="-">
+            <input type="submit" name="request" value="*">
+            <input type="submit" name="request" value="%">
         </form>
         <p>Result: ${results}</p><br>
         <a href="calculator">Age Calculator</a>

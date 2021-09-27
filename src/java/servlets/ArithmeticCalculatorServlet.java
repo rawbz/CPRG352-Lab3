@@ -28,7 +28,6 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 
     }
 
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -36,10 +35,15 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 //capture numbers
                 String first = request.getParameter("first_number");
                 String second = request.getParameter("second_number");
+                String math = request.getParameter("request");
+                int calcresult = 0;
+                
+                System.out.println(math);
 
                 //set attributes
                 request.setAttribute("firstNum", first);
                 request.setAttribute("secondNum", second); 
+                
 
                 //check if input is invalid
                 if(first == null || second == null || first.equals("") || second.equals("")){
@@ -49,8 +53,30 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
                 
                 return;
+                } 
+                
+                try{
+                    switch(math){
+                        case "+": 
+                        calcresult = (Integer.parseInt(first) + Integer.parseInt(second));
+                        break;
+                        case "-": 
+                        calcresult = (Integer.parseInt(first) - Integer.parseInt(second));
+                        break;
+                        case "*": 
+                        calcresult = (Integer.parseInt(first) * Integer.parseInt(second));
+                        break;
+                        case "%": 
+                        calcresult = (Integer.parseInt(first) % Integer.parseInt(second));
+                        break;
+                    }
+                    
+                    request.setAttribute("results", calcresult);
                 }
-
+                catch (Exception e) {
+			System.out.println("Please check your input and try again\n");
+                        request.setAttribute("results", "Invalid");
+                }
 
                 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
                 
