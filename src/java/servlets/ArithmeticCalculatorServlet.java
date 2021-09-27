@@ -21,10 +21,10 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+                //have message show -- when no input 
                 request.setAttribute("results", "---");
                 //load arithmetic jsp
                 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
-                //have message show -- when no input 
                 
     }
 
@@ -50,6 +50,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 
                 return;
                 }
+
 
                 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
                 
