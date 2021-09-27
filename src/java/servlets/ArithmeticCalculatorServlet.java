@@ -74,7 +74,6 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                     request.setAttribute("results", calcresult);
                 }
                 catch (Exception e) {
-			System.out.println("Please check your input and try again\n");
                         request.setAttribute("results", "Invalid");
                 }
 
