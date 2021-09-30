@@ -22,7 +22,7 @@ public class AgeCalculatorServlet extends HttpServlet {
             throws ServletException, IOException {
                 //have servlet call JSP to be loaded 
                 getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request,response);
- 
+                
     }
 
     @Override

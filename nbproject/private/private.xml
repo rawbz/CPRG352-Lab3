@@ -3,8 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/CPRG352/Labs/Lab3_SimpleServlet/src/java/servlets/ArithmeticCalculatorServlet.java</file>
-            <file>file:/C:/CPRG352/Labs/Lab3_SimpleServlet/src/java/servlets/AgeCalculatorServlet.java</file>
+            <file>file:/C:/CPRG352/Labs/Lab3_SimpleServlet/web/assets/css/calculatorstyles.css</file>
+            <file>file:/C:/CPRG352/Labs/Lab3_SimpleServlet/web/WEB-INF/agecalculator.jsp</file>
         </group>
     </open-files>
 </project-private>

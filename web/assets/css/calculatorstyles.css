@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 27, 2021, 9:36:09 AM
+    Author     : rmjba
+*/
+body{
+    font-family: calibri;
+}
+
+td{
+    height: 30px;
+}
+
+.agecalc {
+    margin: 5px;
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 2px #ccc;
+    background-color:rgba(179, 228, 209, 0.8);
+    font-size: small;
+    color: #444
+
+}
+
+.agetable {
+    width:25%;
+}
+
+.ageinput {
+    width: 100%;
+}
+
+.mathbutton {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 2px #ccc;
+    background-color:rgba(179, 228, 209, 0.8);
+    font-size: small;
+    color: #444
+}
